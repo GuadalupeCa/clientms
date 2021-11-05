@@ -27,4 +27,7 @@ public class ClientService {
     public Mono<Void> deleteById(String id) {
         return clientRepository.deleteById(id);
     }
+    public Mono<Client> findByDocumentIdentityNumber(String documentIdentityNumber){
+        return clientRepository.findByDocumentIdentityNumber(documentIdentityNumber);
+    }
 }

@@ -33,4 +33,9 @@ public class ClientRepositoryImpl implements ClientRepository {
     public Mono<Void> deleteById(String id) {
         return clientRepository.deleteById(id);
     }
+
+    @Override
+    public Mono<Client> findByDocumentIdentityNumber(String documentIdentityNumber) {
+        return clientRepository.findByDocumentIdentityNumber(documentIdentityNumber);
+    }
 }

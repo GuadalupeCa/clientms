@@ -9,4 +9,5 @@ public interface ClientRepository {
     Mono<Client> findById(String id);
     Mono<Client> save(Client client);
     Mono<Void> deleteById(String id);
+    Mono<Client> findByDocumentIdentityNumber(String documentIdentityNumber);
 }

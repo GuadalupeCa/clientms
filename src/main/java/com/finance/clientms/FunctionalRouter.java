@@ -16,6 +16,7 @@ public class FunctionalRouter {
     public RouterFunction route(ClientHandler clientHandler) {
         return RouterFunctions
                 .route(GET("/client").and(accept(MediaType.APPLICATION_JSON)), clientHandler::findAll)
+                .andRoute(GET("/client/ide/{ide}").and(accept(MediaType.APPLICATION_JSON)), clientHandler::findByDocumentIdentityNumber)
                 .andRoute(GET("/client/{id}").and(accept(MediaType.APPLICATION_JSON)), clientHandler::findById)
                 .andRoute(POST("/client/save").and(accept(MediaType.APPLICATION_JSON)), clientHandler::save)
                 .andRoute(PUT("/client/update").and(accept(MediaType.APPLICATION_JSON)), clientHandler::update)
