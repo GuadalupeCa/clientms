@@ -1,6 +1,6 @@
 package com.finance.clientms.repository.impl;
 
-import com.finance.clientms.entity.Client;
+import com.finance.clientms.domain.document.Client;
 import com.finance.clientms.repository.ClientRepositoryExt;
 import com.finance.clientms.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;

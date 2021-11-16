@@ -1,6 +1,6 @@
 package com.finance.clientms.handler;
 
-import com.finance.clientms.entity.Client;
+import com.finance.clientms.domain.document.Client;
 import com.finance.clientms.service.ClientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

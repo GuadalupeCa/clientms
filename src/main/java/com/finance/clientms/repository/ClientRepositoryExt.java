@@ -1,6 +1,6 @@
 package com.finance.clientms.repository;
 
-import com.finance.clientms.entity.Client;
+import com.finance.clientms.domain.document.Client;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import reactor.core.publisher.Mono;
 

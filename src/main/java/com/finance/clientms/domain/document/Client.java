@@ -1,4 +1,4 @@
-package com.finance.clientms.entity;
+package com.finance.clientms.domain.document;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
