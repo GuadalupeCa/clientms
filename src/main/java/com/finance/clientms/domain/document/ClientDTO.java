@@ -1,11 +1,8 @@
 package com.finance.clientms.domain.document;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
-@Builder
-public class Type {
-
-    //private String id;
+public class ClientDTO {
     private String name;
 }

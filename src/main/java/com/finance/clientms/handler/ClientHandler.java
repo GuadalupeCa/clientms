@@ -55,7 +55,7 @@ public class ClientHandler {
     public Mono update(ServerRequest serverRequest) {
         Mono<Client> client = serverRequest.bodyToMono(Client.class);
         log.info("Update client");
-        return client.flatMap(c -> ServerResponse
+        return client .flatMap(c -> ServerResponse
                 .status(HttpStatus.CREATED)
                 .body(clientService.save(c), Client.class))
                 .onErrorResume(e -> Mono.error(new RuntimeException("Error updating the client")));

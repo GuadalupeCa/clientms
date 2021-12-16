@@ -1,6 +1,7 @@
 package com.finance.clientms.service;
 
 import com.finance.clientms.domain.document.Client;
+import com.finance.clientms.domain.document.ClientDTO;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

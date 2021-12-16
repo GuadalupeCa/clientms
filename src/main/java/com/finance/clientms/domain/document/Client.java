@@ -12,6 +12,8 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
+//@Builder
+
 @Document(collection = "client")
 public class Client {
     @Id
@@ -30,16 +32,20 @@ public class Client {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createAt;
 
-    public Client(String documentIdentityType, String documentIdentityNumber, String name, Type type, String gender, String phoneNumber, String address, String email, Date birthdate, Date createAt) {
-        this.documentIdentityType = documentIdentityType;
-        this.documentIdentityNumber = documentIdentityNumber;
+//    public Client(String documentIdentityType, String documentIdentityNumber, String name, Type type, String gender, String phoneNumber, String address, String email, Date birthdate, Date createAt) {
+//        this.documentIdentityType = documentIdentityType;
+//        this.documentIdentityNumber = documentIdentityNumber;
+//        this.name = name;
+//        this.type = type;
+//        this.gender = gender;
+//        this.phoneNumber = phoneNumber;
+//        this.address = address;
+//        this.email = email;
+//        this.birthdate = birthdate;
+//        this.createAt = createAt;
+//    }
+//
+    public Client(String name) {
         this.name = name;
-        this.type = type;
-        this.gender = gender;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
-        this.email = email;
-        this.birthdate = birthdate;
-        this.createAt = createAt;
     }
 }
